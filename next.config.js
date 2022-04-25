@@ -17,6 +17,9 @@ const nextConfig = {
     ]
   },
   images: {
+    loader: 'akamai',
+    path: '',
+
     domains: [
       'local-laravel-shop.com',
       'local-rad-stack.com',

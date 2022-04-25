@@ -35,3 +35,4 @@ yarn-error.log*
 .env
 /tags
 /1.vim
+/public/storage

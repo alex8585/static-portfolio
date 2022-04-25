@@ -193,9 +193,7 @@ const Index: NextPage<Props> = ({ tagsStr }) => {
                 {portfolios
                   .slice((page - 1) * perPage, page * perPage)
                   .map((portfolio, i) => {
-                    const fullImg = portfolio.image
-                      ? API_DOMAIN + portfolio.image
-                      : ''
+                    const fullImg = portfolio.image ? portfolio.image : ''
                     images.push(fullImg)
 
                     return (
@@ -209,11 +207,7 @@ const Index: NextPage<Props> = ({ tagsStr }) => {
                           <Image
                             className={classes.image}
                             onClick={() => setCurrentImage(i)}
-                            src={
-                              portfolio.thumb
-                                ? API_DOMAIN + portfolio.thumb
-                                : ''
-                            }
+                            src={portfolio.thumb ? portfolio.thumb : ''}
                             alt={portfolio.name}
                             width={300}
                             height={200}

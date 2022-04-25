@@ -8,6 +8,7 @@
     "lint": "eslint ./*.ts ./{components,features,hooks,pages,utils}/**/*.{js,ts,tsx}",
     "prettier": "npx prettier   ./*ts ./{components,features,hooks,pages,utils}/**/*.{js,ts,tsx}   --write",
     "build": "next build && next export",
+    "export": "next export",
     "start": "next start"
   },
   "dependencies": {
